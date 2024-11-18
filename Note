@@ -1,0 +1,53 @@
+JSP : Java Server Page
+Advantages:
+ i)Extension to the servlet
+ ii)Easy to maintain
+ iii)Fast development: No need to recompile and redeploy
+ iv)Less code than servlet
+ 
+ 
+ JSP Lifecycle:
+ 
+ i)Tanslation of JSP page
+ ii)Compilation of JSP page
+ iii)Classloading
+ iv)Instantiation(Object creation)
+ v)Initialization(container invokes jspinit())
+ vi)Request Processing(container invokes _jspService())
+ vii)Destroy(container invokes jspDestroy())
+ 
+ Container : Server
+ 
+ Jsp : @ Directive
+ 
+ Tags:
+ i)Scriplet Tag   <%  code %>
+ ii)Expression Tag <%= code %> 
+ iii)Declaration Tag <%! code %>
+ 
+ 
+ Implicit Object:
+ i)Request
+ ii)Response
+ iii)Config
+ iv)Application
+ v)Session
+ vi)PageContext
+    Scopes: page, request, session, application
+ vii)Page(Object)
+ viii)Exception
+ 
+ Error Page: 404
+ 
+ 
+ 
+ Directives:
+ i)Page  : <%@ page attribute="value" %>
+ ii)Include
+ iii)Taglib
+ 
+ Web Application: Multiple page
+ 
+ 
+ 
+ 
