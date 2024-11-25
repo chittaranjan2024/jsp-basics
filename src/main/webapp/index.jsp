@@ -11,6 +11,7 @@
 </head>
 <body>
   <%@ include file="header.jsp" %>
+  <jsp:include page="showtime.jsp"></jsp:include>
  <h2>This is the home page</h2>
 </body>
 <%
@@ -18,8 +19,27 @@
 %>
 
 <%
- pageContext.setAttribute("user", "Guvi",PageContext.APPLICATION_SCOPE);
+ pageContext.setAttribute("user", "Guvi",PageContext.SESSION_SCOPE);
  out.print(pageContext.getAttribute("user"));
 %>
+
+<jsp:useBean id="emp1" class="model.Employee"></jsp:useBean>
+<jsp:setProperty property="id" name="emp1" value="101"/>
+<jsp:setProperty property="name" name="emp1" value="GUVI"/>
+
+<p>
+<jsp:getProperty property="id" name="emp1"/>
+<jsp:getProperty property="name" name="emp1"/>
+</p>
+<% 
+
+out.print(emp1.display()); %>
+
+<jsp:forward page="test.jsp">
+   
+   <jsp:param value="25/11/2024" name="currentDate"/>
+   <jsp:param value="Monday" name="currentDay"/>
+
+</jsp:forward>
 
 </html>

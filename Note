@@ -48,6 +48,22 @@ Advantages:
  
  Web Application: Multiple page
  
+ Action Tags:
+ These are special types of tags used to perform specific tasks.
+ 
+ i)jsp:forward : It forwards the request and response from one resource to another resource.
+ ii)jsp:include : It includes a resource in the current page.
+ iii)jsp:useBean : Creates a bean object.
+ iv)jsp:setProperty :sets the value of property in bean object
+ v)jsp:getProperty : displays the value property of the bean object.
+ vi)jsp:param : It sets parameter value.
+ vii)jsp:fallback: Displays a message if plugin is not working.
+ viii)jsp:plugin : Embed another resource.(ex: applet, bean) 
+ 
+ Bean - Java class
+ 
+ 
+ 
  
  
  

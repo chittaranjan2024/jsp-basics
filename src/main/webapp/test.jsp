@@ -65,5 +65,22 @@
     this.log("This is a log message");
   %>
   
+  
+  <%
+   out.print(request.getParameter("currentDay"));
+   out.print(request.getParameter("currentDate"));
+  %>
+  
+  <jsp:plugin code="model.Employee"  type="bean" codebase="">
+    <jsp:params name="id" value="101"></jsp:params>
+    <jsp:params name="name" value="GUVI"></jsp:params>
+    
+   <jsp:fallback>
+     Bean is not loaded
+   </jsp:fallback>
+  </jsp:plugin>
+  
+  
+  
 </body>
 </html>
